@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    tools{
+        Maven "maven-doinstalowany"
+    }
 
     stages {
         stage('Build') {
