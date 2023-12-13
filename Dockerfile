@@ -1,4 +1,4 @@
-FROM openjdk:21-jdk-alpine
+FROM amazoncorretto:21
 WORKDIR /app
 COPY target/arktos-joiner-0.0.1-SNAPSHOT.jar /app/arktos-joiner-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
