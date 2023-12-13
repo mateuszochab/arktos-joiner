@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            withMaven {
+                withMaven(
+                    maven: 'maven-doinstalowany'
+                ) {
                     sh 'mvn clean package'
                 }
             }
